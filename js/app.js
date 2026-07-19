@@ -1,5 +1,4 @@
-/**
- * 心随乐动 - 前端交互逻辑
+* 心随乐动 - 前端交互逻辑
  *
  * 连接后端 API 进行情绪分析与歌曲推荐
  * API_BASE: 自动根据环境切换（开发=localhost / 生产=Koyeb域名）
@@ -32,7 +31,7 @@ const API_BASE = (() => {
   const isProduction = productionHosts.some(h => window.location.hostname.includes(h));
 
   return isProduction
-    ? 'https://mind-with-music.up.railway.app'   // ← 部署后替换为你的 Railway 域名
+    ? 'web-production-e016.up.railway.app'   // ← 部署后替换为你的 Railway 域名
     : 'http://127.0.0.1:5000';
 })();
 
