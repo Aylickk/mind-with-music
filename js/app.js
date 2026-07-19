@@ -24,15 +24,15 @@ const API_BASE = (() => {
   const meta = document.querySelector('meta[name="api-base"]');
   if (meta) return meta.getAttribute('content');
 
-  // 生产环境域名列表（按需添加你的 Koyeb 域名）
+  // 生产环境域名列表（按需添加你的 Railway 域名）
   const productionHosts = [
-    'mind-with-music.koyeb.app',
+    'mind-with-music.up.railway.app',  // Railway 自动分配的域名
     'your-username.github.io'
   ];
   const isProduction = productionHosts.some(h => window.location.hostname.includes(h));
 
   return isProduction
-    ? 'https://mind-with-music.koyeb.app'   // ← 部署后替换为你的 Koyeb 域名
+    ? 'https://mind-with-music.up.railway.app'   // ← 部署后替换为你的 Railway 域名
     : 'http://127.0.0.1:5000';
 })();
 
