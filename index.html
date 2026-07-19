@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>心随乐动 - AI情绪音乐推荐助手</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部装饰 -->
+  <div class="top-decoration"></div>
+
+  <!-- 头部 -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">&#9835;</span>
+        <h1>心随乐动</h1>
+      </div>
+      <p class="subtitle">输入你的心情，让音乐为你共鸣</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 输入区 -->
+    <section class="input-section">
+      <div class="input-card">
+        <label for="user-input" class="input-label">
+          <span class="label-icon">&#9998;</span>
+          此刻你的心情或经历是...
+        </label>
+        <textarea
+          id="user-input"
+          class="user-textarea"
+          placeholder="例如：今天和好朋友去看了日落，感觉很放松，心里暖暖的..."
+          rows="4"
+        ></textarea>
+        <div class="input-footer">
+          <span class="char-count"><span id="char-count">0</span>/500</span>
+          <button id="submit-btn" class="btn-primary">
+            <span class="btn-icon">&#9835;</span>
+            获取音乐推荐
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 加载动画 -->
+    <div id="loading" class="loading-section hidden">
+      <div class="loading-content">
+        <div class="music-loader">
+          <span class="note note-1">&#9835;</span>
+          <span class="note note-2">&#9834;</span>
+          <span class="note note-3">&#9835;</span>
+        </div>
+        <p class="loading-text">正在倾听你的心情...</p>
+        <p class="loading-subtext">AI 正在分析情绪并匹配最适合的歌曲</p>
+      </div>
+    </div>
+
+    <!-- 结果区 -->
+    <div id="result-section" class="result-section hidden">
+      <!-- 情绪分析结果 -->
+      <div class="emotion-card">
+        <div class="emotion-header">
+          <span class="emotion-icon">&#10024;</span>
+          <span>情绪分析</span>
+        </div>
+        <div class="emotion-body">
+          <div class="emotion-tags" id="emotion-tags">
+            <!-- 由 JS 动态生成 -->
+          </div>
+          <p class="emotion-explain" id="emotion-explain"></p>
+        </div>
+      </div>
+
+      <!-- 推荐歌曲列表 -->
+      <div class="songs-header">
+        <h2 class="section-title">
+          <span class="title-icon">&#9835;</span>
+          为你推荐的歌曲
+        </h2>
+        <span class="songs-count" id="songs-count"></span>
+      </div>
+      <div class="songs-grid" id="songs-grid">
+        <!-- 由 JS 动态生成 -->
+      </div>
+    </div>
+
+    <!-- 错误提示 -->
+    <div id="error-section" class="error-section hidden">
+      <div class="error-card">
+        <div class="error-header">
+          <span class="error-icon" id="error-icon">&#9888;</span>
+          <span class="error-badge" id="error-badge">错误</span>
+        </div>
+        <p class="error-title" id="error-title">出错了，请稍后重试</p>
+        <p class="error-suggestion" id="error-suggestion"></p>
+        <button id="retry-btn" class="btn-secondary">重新尝试</button>
+      </div>
+    </div>
+
+    <!-- 空状态（初始进入页面时显示） -->
+    <div id="empty-state" class="empty-state">
+      <div class="empty-content">
+        <span class="empty-icon">&#127925;</span>
+        <h3>写下你的心情故事</h3>
+        <p>描述一个场景、一段经历或一种情绪</p>
+        <p class="empty-hint">AI 会分析你的心情，推荐最契合的歌曲</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>心随乐动 &mdash; 用音乐治愈每一颗心灵</p>
+      <p class="footer-privacy">你的输入仅用于本次情绪分析，不会被存储</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

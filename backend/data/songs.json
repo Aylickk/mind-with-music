@@ -1,0 +1,332 @@
+[
+  {
+    "id": "s001", "title": "稻香", "artist": "周杰伦",
+    "emotion_tags": ["温暖", "治愈", "轻快", "感恩", "田园"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.85, "energy": 0.60, "calmness": 0.70}
+  },
+  {
+    "id": "s002", "title": "晴天", "artist": "周杰伦",
+    "emotion_tags": ["愉悦", "阳光", "怀念", "青春", "温暖"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.80, "energy": 0.55, "calmness": 0.60}
+  },
+  {
+    "id": "s003", "title": "小美满", "artist": "周深",
+    "emotion_tags": ["温暖", "治愈", "幸福", "感动"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.90, "energy": 0.50, "calmness": 0.80}
+  },
+  {
+    "id": "s004", "title": "路过人间", "artist": "郁可唯",
+    "emotion_tags": ["感动", "温暖", "释然", "人生"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.65, "energy": 0.45, "calmness": 0.75}
+  },
+  {
+    "id": "s005", "title": "起风了", "artist": "买辣椒也用券",
+    "emotion_tags": ["怀念", "治愈", "感动", "青春"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.60, "energy": 0.55, "calmness": 0.65}
+  },
+  {
+    "id": "s006", "title": "好想好想你", "artist": "邓紫棋",
+    "emotion_tags": ["愉悦", "轻快", "思念", "甜蜜"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.75, "energy": 0.65, "calmness": 0.45}
+  },
+  {
+    "id": "s007", "title": "岁月神偷", "artist": "金玟岐",
+    "emotion_tags": ["感动", "温暖", "怀念", "珍惜"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.55, "energy": 0.40, "calmness": 0.75}
+  },
+  {
+    "id": "s008", "title": "Lemon", "artist": "米津玄师",
+    "emotion_tags": ["感伤", "怀念", "深沉", "失去"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.30, "energy": 0.55, "calmness": 0.50}
+  },
+  {
+    "id": "s009", "title": "安和桥", "artist": "宋冬野",
+    "emotion_tags": ["怀念", "孤独", "感伤", "回忆"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.35, "energy": 0.35, "calmness": 0.70}
+  },
+  {
+    "id": "s010", "title": "好久不见", "artist": "陈奕迅",
+    "emotion_tags": ["怀念", "感伤", "思念", "平静"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.35, "energy": 0.30, "calmness": 0.80}
+  },
+  {
+    "id": "s011", "title": "消愁", "artist": "毛不易",
+    "emotion_tags": ["孤独", "治愈", "感伤", "释然"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.30, "energy": 0.40, "calmness": 0.65}
+  },
+  {
+    "id": "s012", "title": "成全", "artist": "林宥嘉",
+    "emotion_tags": ["感伤", "释然", "放手", "成熟"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.35, "energy": 0.35, "calmness": 0.65}
+  },
+  {
+    "id": "s013", "title": "城南花已开", "artist": "三亩地",
+    "emotion_tags": ["治愈", "平静", "温暖", "希望"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.55, "energy": 0.20, "calmness": 0.90}
+  },
+  {
+    "id": "s014", "title": "后来", "artist": "刘若英",
+    "emotion_tags": ["怀念", "感动", "成长", "遗憾"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.40, "energy": 0.40, "calmness": 0.65}
+  },
+  {
+    "id": "s015", "title": "夜空中最亮的星", "artist": "逃跑计划",
+    "emotion_tags": ["希望", "治愈", "力量", "坚持"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.70, "energy": 0.60, "calmness": 0.55}
+  },
+  {
+    "id": "s016", "title": "孤勇者", "artist": "陈奕迅",
+    "emotion_tags": ["力量", "励志", "勇敢", "奋斗"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.75, "energy": 0.85, "calmness": 0.25}
+  },
+  {
+    "id": "s017", "title": "逆战", "artist": "张杰",
+    "emotion_tags": ["燃", "斗志", "力量", "激昂"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.80, "energy": 0.90, "calmness": 0.15}
+  },
+  {
+    "id": "s018", "title": "追梦赤子心", "artist": "GALA",
+    "emotion_tags": ["励志", "感动", "坚持", "梦想"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.75, "energy": 0.80, "calmness": 0.30}
+  },
+  {
+    "id": "s019", "title": "我相信", "artist": "杨培安",
+    "emotion_tags": ["自信", "力量", "希望", "激昂"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.85, "energy": 0.85, "calmness": 0.20}
+  },
+  {
+    "id": "s020", "title": "光年之外", "artist": "邓紫棋",
+    "emotion_tags": ["力量", "激昂", "深情", "宏大"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.70, "energy": 0.75, "calmness": 0.40}
+  },
+  {
+    "id": "s021", "title": "最美的太阳", "artist": "张杰",
+    "emotion_tags": ["希望", "温暖", "励志", "力量"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.80, "energy": 0.70, "calmness": 0.50}
+  },
+  {
+    "id": "s022", "title": "Hall of Fame", "artist": "The Script",
+    "emotion_tags": ["励志", "力量", "梦想", "自信"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.80, "energy": 0.85, "calmness": 0.30}
+  },
+  {
+    "id": "s023", "title": "卡农", "artist": "Johann Pachelbel",
+    "emotion_tags": ["平静", "经典", "治愈", "优雅"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.60, "energy": 0.20, "calmness": 0.95}
+  },
+  {
+    "id": "s024", "title": "River Flows in You", "artist": "Yiruma",
+    "emotion_tags": ["宁静", "治愈", "浪漫", "温柔"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.65, "energy": 0.15, "calmness": 0.95}
+  },
+  {
+    "id": "s025", "title": "风吹麦浪", "artist": "李健",
+    "emotion_tags": ["宁静", "温暖", "田园", "诗意"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.70, "energy": 0.35, "calmness": 0.85}
+  },
+  {
+    "id": "s026", "title": "贝加尔湖畔", "artist": "李健",
+    "emotion_tags": ["宁静", "空灵", "浪漫", "诗意"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.55, "energy": 0.30, "calmness": 0.90}
+  },
+  {
+    "id": "s027", "title": "A Thousand Years", "artist": "Christina Perri",
+    "emotion_tags": ["浪漫", "平静", "深情", "永恒"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.70, "energy": 0.35, "calmness": 0.80}
+  },
+  {
+    "id": "s028", "title": "月光", "artist": "德彪西",
+    "emotion_tags": ["宁静", "艺术", "优雅", "空灵"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.50, "energy": 0.10, "calmness": 0.95}
+  },
+  {
+    "id": "s029", "title": "借我", "artist": "谢春花",
+    "emotion_tags": ["干净", "治愈", "安静", "民谣"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.50, "energy": 0.30, "calmness": 0.85}
+  },
+  {
+    "id": "s030", "title": "小幸运", "artist": "田馥甄",
+    "emotion_tags": ["愉悦", "感动", "青春", "甜蜜"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.85, "energy": 0.55, "calmness": 0.60}
+  },
+  {
+    "id": "s031", "title": "平凡之路", "artist": "朴树",
+    "emotion_tags": ["释然", "平静", "人生", "感悟"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.55, "energy": 0.45, "calmness": 0.75}
+  },
+  {
+    "id": "s032", "title": "Faded", "artist": "Alan Walker",
+    "emotion_tags": ["感伤", "空灵", "深沉", "孤独"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.30, "energy": 0.50, "calmness": 0.55}
+  },
+  {
+    "id": "s033", "title": "海底", "artist": "一支榴莲",
+    "emotion_tags": ["孤独", "感伤", "压抑", "深沉"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.15, "energy": 0.30, "calmness": 0.70}
+  },
+  {
+    "id": "s034", "title": "飞鸟和蝉", "artist": "任然",
+    "emotion_tags": ["感伤", "怀念", "离别", "治愈"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.35, "energy": 0.40, "calmness": 0.70}
+  },
+  {
+    "id": "s035", "title": "大鱼", "artist": "周深",
+    "emotion_tags": ["空灵", "治愈", "感动", "唯美"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.60, "energy": 0.45, "calmness": 0.80}
+  },
+  {
+    "id": "s036", "title": "成都", "artist": "赵雷",
+    "emotion_tags": ["温暖", "怀念", "民谣", "慢生活"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.65, "energy": 0.40, "calmness": 0.80}
+  },
+  {
+    "id": "s037", "title": "Counting Stars", "artist": "OneRepublic",
+    "emotion_tags": ["力量", "激昂", "梦想", "节奏"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.80, "energy": 0.80, "calmness": 0.30}
+  },
+  {
+    "id": "s038", "title": "See You Again", "artist": "Wiz Khalifa",
+    "emotion_tags": ["怀念", "感动", "友谊", "温暖"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.50, "energy": 0.45, "calmness": 0.70}
+  },
+  {
+    "id": "s039", "title": "光", "artist": "刘瑞琦",
+    "emotion_tags": ["希望", "治愈", "温暖", "明亮"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.75, "energy": 0.55, "calmness": 0.70}
+  },
+  {
+    "id": "s040", "title": "理想三旬", "artist": "陈鸿宇",
+    "emotion_tags": ["感慨", "回忆", "民谣", "成熟"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.45, "energy": 0.35, "calmness": 0.80}
+  },
+  {
+    "id": "s041", "title": "Moji", "artist": "徐梦圆",
+    "emotion_tags": ["轻快", "治愈", "电子", "愉悦"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.80, "energy": 0.70, "calmness": 0.50}
+  },
+  {
+    "id": "s042", "title": "晚安", "artist": "颜人中",
+    "emotion_tags": ["温柔", "安宁", "治愈", "睡前"],
+    "sentiment_type": "neutral",
+    "mood_vector": {"valence": 0.55, "energy": 0.20, "calmness": 0.90}
+  },
+  {
+    "id": "s043", "title": "嚣张", "artist": "en",
+    "emotion_tags": ["感伤", "深情", "压抑", "失落"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.25, "energy": 0.45, "calmness": 0.55}
+  },
+  {
+    "id": "s044", "title": "日不落", "artist": "蔡依林",
+    "emotion_tags": ["愉悦", "轻快", "阳光", "甜蜜"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.90, "energy": 0.80, "calmness": 0.30}
+  },
+  {
+    "id": "s045", "title": "说好不哭", "artist": "周杰伦",
+    "emotion_tags": ["感伤", "怀念", "释然", "成熟"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.35, "energy": 0.35, "calmness": 0.70}
+  },
+  {
+    "id": "s046", "title": "微微", "artist": "傅如乔",
+    "emotion_tags": ["励志", "温暖", "力量", "希望"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.75, "energy": 0.65, "calmness": 0.60}
+  },
+  {
+    "id": "s047", "title": "Shape of You", "artist": "Ed Sheeran",
+    "emotion_tags": ["轻快", "节奏", "愉悦", "活力"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.85, "energy": 0.85, "calmness": 0.20}
+  },
+  {
+    "id": "s048", "title": "赤伶", "artist": "HITA",
+    "emotion_tags": ["感动", "悲壮", "国风", "深沉"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.35, "energy": 0.60, "calmness": 0.50}
+  },
+  {
+    "id": "s049", "title": "少年", "artist": "梦然",
+    "emotion_tags": ["励志", "活力", "自信", "青春"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.85, "energy": 0.80, "calmness": 0.30}
+  },
+  {
+    "id": "s050", "title": "Misunderstanding", "artist": "Guns N' Roses",
+    "emotion_tags": ["激昂", "力量", "摇滚", "自由"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.75, "energy": 0.90, "calmness": 0.15}
+  },
+  {
+    "id": "s051", "title": "Yesterday Once More", "artist": "Carpenters",
+    "emotion_tags": ["怀念", "温暖", "经典", "感动"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.50, "energy": 0.25, "calmness": 0.85}
+  },
+  {
+    "id": "s052", "title": "星空", "artist": "许巍",
+    "emotion_tags": ["自由", "梦想", "力量", "希望"],
+    "sentiment_type": "positive",
+    "mood_vector": {"valence": 0.75, "energy": 0.70, "calmness": 0.50}
+  },
+  {
+    "id": "s053", "title": "可能否", "artist": "木小雅",
+    "emotion_tags": ["感伤", "思念", "遗憾", "温柔"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.30, "energy": 0.35, "calmness": 0.70}
+  },
+  {
+    "id": "s054", "title": "父亲写的散文诗", "artist": "李健",
+    "emotion_tags": ["感动", "温暖", "亲情", "怀念"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.40, "energy": 0.30, "calmness": 0.75}
+  },
+  {
+    "id": "s055", "title": "Last Dance", "artist": "伍佰",
+    "emotion_tags": ["怀旧", "感动", "经典", "深情"],
+    "sentiment_type": "negative",
+    "mood_vector": {"valence": 0.45, "energy": 0.50, "calmness": 0.55}
+  }
+]

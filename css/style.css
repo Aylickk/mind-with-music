@@ -1,0 +1,762 @@
+/* ============================================
+   心随乐动 - 主样式表
+   Design: 温暖治愈风格
+   ============================================ */
+
+/* ---------- CSS 变量 ---------- */
+:root {
+  --primary: #6C5CE7;
+  --primary-light: #A29BFE;
+  --primary-dark: #5A4BD1;
+  --secondary: #FD79A8;
+  --secondary-light: #FDA7DF;
+  --accent-warm: #FDCB6E;
+  --gradient-main: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-warm: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --bg-body: #f8f7ff;
+  --bg-card: #ffffff;
+  --text-primary: #2d3436;
+  --text-secondary: #636e72;
+  --text-muted: #b2bec3;
+  --shadow-sm: 0 2px 8px rgba(108, 92, 231, 0.08);
+  --shadow-md: 0 4px 20px rgba(108, 92, 231, 0.12);
+  --shadow-lg: 0 8px 40px rgba(108, 92, 231, 0.15);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- 全局重置 ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg-body);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- 顶部装饰条 ---------- */
+.top-decoration {
+  height: 4px;
+  background: var(--gradient-main);
+}
+
+/* ---------- 容器 ---------- */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* ---------- 头部 ---------- */
+.header {
+  text-align: center;
+  padding: 40px 0 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.logo-icon {
+  font-size: 36px;
+  color: var(--primary);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.logo h1 {
+  font-size: 32px;
+  font-weight: 800;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* ---------- 输入区 ---------- */
+.input-section {
+  margin-bottom: 24px;
+}
+
+.input-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.input-card:focus-within {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.input-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.label-icon {
+  font-size: 18px;
+}
+
+.user-textarea {
+  width: 100%;
+  border: 2px solid #e8e6f0;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: #faf9ff;
+  resize: vertical;
+  min-height: 100px;
+  transition: var(--transition);
+  outline: none;
+  line-height: 1.7;
+}
+
+.user-textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.user-textarea:focus {
+  border-color: var(--primary-light);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.08);
+}
+
+.input-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.char-count {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ---------- 按钮 ---------- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: var(--gradient-main);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-icon {
+  font-size: 18px;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: var(--primary-light);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  transform: translateY(-1px);
+}
+
+/* ---------- 空状态 ---------- */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.empty-icon {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.empty-hint {
+  margin-top: 8px;
+  color: var(--text-muted) !important;
+  font-size: 13px !important;
+}
+
+/* ---------- 加载动画 ---------- */
+.loading-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.music-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.music-loader .note {
+  font-size: 32px;
+  color: var(--primary);
+  animation: bounce 1.4s ease-in-out infinite;
+}
+
+.note-1 { animation-delay: 0s; }
+.note-2 { animation-delay: 0.2s; }
+.note-3 { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0.6) translateY(0);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1) translateY(-12px);
+    opacity: 1;
+  }
+}
+
+.loading-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.loading-subtext {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ---------- 结果区 ---------- */
+.result-section {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- 情绪卡片 ---- */
+.emotion-card {
+  background: var(--gradient-main);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 32px;
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(108, 92, 231, 0.25);
+}
+
+.emotion-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.emotion-icon {
+  font-size: 18px;
+}
+
+.emotion-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emotion-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.emotion-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+.emotion-tag:nth-child(1) { animation-delay: 0s; }
+.emotion-tag:nth-child(2) { animation-delay: 0.1s; }
+.emotion-tag:nth-child(3) { animation-delay: 0.2s; }
+.emotion-tag:nth-child(4) { animation-delay: 0.3s; }
+.emotion-tag:nth-child(5) { animation-delay: 0.4s; }
+
+.emotion-explain {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* ---- 歌曲列表头部 ---- */
+.songs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.title-icon {
+  color: var(--primary);
+  font-size: 22px;
+}
+
+.songs-count {
+  font-size: 14px;
+  color: var(--text-muted);
+  background: #f0eef9;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+/* ---- 歌曲卡片网格 ---- */
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.song-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  animation: fadeInUp 0.5s ease-out both;
+  cursor: default;
+}
+
+.song-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.song-card:nth-child(1) { animation-delay: 0.05s; }
+.song-card:nth-child(2) { animation-delay: 0.1s; }
+.song-card:nth-child(3) { animation-delay: 0.15s; }
+.song-card:nth-child(4) { animation-delay: 0.2s; }
+.song-card:nth-child(5) { animation-delay: 0.25s; }
+.song-card:nth-child(6) { animation-delay: 0.3s; }
+.song-card:nth-child(7) { animation-delay: 0.35s; }
+.song-card:nth-child(8) { animation-delay: 0.4s; }
+
+/* 封面区域 */
+.song-cover {
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--gradient-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.song-cover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.1));
+}
+
+/* 封面颜色变体 */
+.song-cover-0 { background: linear-gradient(135deg, #667eea, #764ba2); }
+.song-cover-1 { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.song-cover-2 { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.song-cover-3 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+.song-cover-4 { background: linear-gradient(135deg, #fa709a, #fee140); }
+.song-cover-5 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+.song-cover-6 { background: linear-gradient(135deg, #fccb90, #d57eeb); }
+.song-cover-7 { background: linear-gradient(135deg, #e0c3fc, #8ec5fc); }
+
+.song-cover-icon {
+  font-size: 48px;
+  opacity: 0.6;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+}
+
+/* 歌曲信息 */
+.song-info {
+  padding: 14px 16px 16px;
+}
+
+.song-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-artist {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.song-reason {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 情绪标签徽章 */
+.song-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.song-tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #f0eef9;
+  color: var(--primary);
+}
+
+.song-tag.warm {
+  background: #fde8ef;
+  color: #e17055;
+}
+
+.song-tag.calm {
+  background: #e8f4fd;
+  color: #0984e3;
+}
+
+.song-tag.joy {
+  background: #fff3e0;
+  color: #e17055;
+}
+
+.song-tag.sad {
+  background: #e8e8f0;
+  color: #6c5ce7;
+}
+
+.song-tag.energetic {
+  background: #e8f8e8;
+  color: #00b894;
+}
+
+/* ---------- 错误提示 ---------- */
+.error-section {
+  padding: 40px 20px;
+}
+
+.error-card {
+  text-align: center;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: var(--radius-lg);
+  padding: 40px 24px;
+  max-width: 480px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+/* 错误分类颜色主题 */
+.error-card.is-network {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+.error-card.is-server {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+.error-card.is-empty {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+.error-card.is-input {
+  background: #fff5f5;
+  border-color: #fed7d7;
+}
+
+/* 错误头部 */
+.error-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.error-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 22px;
+  background: #fee2e2;
+  color: #dc2626;
+  flex-shrink: 0;
+}
+
+.is-network .error-icon {
+  background: #fef3c7;
+  color: #d97706;
+}
+.is-server .error-icon {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.is-empty .error-icon {
+  background: #dbeafe;
+  color: #2563eb;
+}
+.is-input .error-icon {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* 错误状态徽章 */
+.error-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 20px;
+  background: #fee2e2;
+  color: #dc2626;
+  letter-spacing: 0.5px;
+}
+.is-network .error-badge {
+  background: #fef3c7;
+  color: #d97706;
+}
+.is-server .error-badge {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.is-empty .error-badge {
+  background: #dbeafe;
+  color: #2563eb;
+}
+.is-input .error-badge {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.error-title {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.error-suggestion {
+  color: #888;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ---------- 页脚 ---------- */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 32px 20px;
+  background: #fff;
+  border-top: 1px solid #f0eef9;
+}
+
+.footer p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.footer-privacy {
+  font-size: 12px !important;
+  margin-top: 4px;
+  opacity: 0.7;
+}
+
+/* ---------- 工具类 ---------- */
+.hidden {
+  display: none !important;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 600px) {
+  .header {
+    padding: 28px 0 20px;
+  }
+
+  .logo h1 {
+    font-size: 26px;
+  }
+
+  .input-card {
+    padding: 16px;
+  }
+
+  .user-textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .input-footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .btn-primary {
+    justify-content: center;
+  }
+
+  .songs-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .emotion-card {
+    padding: 18px;
+  }
+
+  .song-info {
+    padding: 10px 12px 12px;
+  }
+
+  .song-title {
+    font-size: 13px;
+  }
+
+  .song-artist {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .songs-grid {
+    grid-template-columns: 1fr;
+  }
+}

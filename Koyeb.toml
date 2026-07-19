@@ -1,0 +1,22 @@
+# Koyeb 部署配置文件
+# 文档: https://www.koyeb.com/docs/build/deploy
+
+[app]
+  name = "mind-with-music"
+
+[build]
+  builder = "buildpacks"
+  build_command = ""
+  run_command = "cd backend && python app.py"
+
+[instance]
+  type = "micro"      # 免费套餐实例类型
+  regions = ["was"]   # 美国西部（可改为 fra 欧洲 / sin 新加坡）
+
+[env]
+  PYTHONUNBUFFERED = "true"
+  # AI 模式：设置此环境变量可启用 DeepSeek 模型分析
+  # DS_API_KEY = ""
+  # DS_BASE_URL = "https://api.deepseek.com"
+  # 生产环境关闭 Flask 调试
+  FLASK_DEBUG = "false"
